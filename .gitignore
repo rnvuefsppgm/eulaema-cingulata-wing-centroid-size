@@ -1,0 +1,6 @@
+data/raw/*
+!data/raw/.gitkeep
+outputs/
+__pycache__/
+*.pyc
+.Rhistory
