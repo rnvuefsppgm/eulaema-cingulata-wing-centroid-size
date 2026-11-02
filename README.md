@@ -31,7 +31,7 @@ Inputs are read from `data/raw/` and all results are written to `outputs/` (tabl
 
 ## Data (Supplementary Data S1a–e of the article)
 
-The folder `data/` holds the individual-level data analysed in the article, as CSV files (UTF-8, comma-separated) with the same values as the
+The folder `data/` holds the individual-level data analysed in the article, as CSV files (UTF-8, comma-separated; CC BY 4.0) with the same values as the
 Word files Data S1a–e of the supplementary material:
 
 | File | Content | Article item |
@@ -76,4 +76,5 @@ R 4.6.0 (lme4 2.0.6, vegan 2.7.5, MASS). Random seeds are fixed in the scripts, 
 
 ## License
 
-Code released under the MIT License (see `LICENSE`).
+- Code (`scripts/`): MIT License (see `LICENSE`).
+- Data (`data/`): Creative Commons Attribution 4.0 International (CC BY 4.0) (see `data/LICENSE.md`).
