@@ -2,8 +2,8 @@
 
 Scripts that reproduce the analyses, supplementary tables and figures of the manuscript
 **"Wing centroid size variation among *Eulaema cingulata* (Fabricius) populations from Atlantic Forest remnants of different sizes"**
-(submitted to the *Journal of Insect Conservation*). They are deposited here at the request of the reviewers and are
-also provided with the manuscript as Supplementary Code S1.
+(submitted to the *Journal of Insect Conservation*). They are deposited here at the request of the reviewers; the manuscript
+cites this repository in its Data analysis, Data availability and Code availability sections.
 
 ## Scripts (run in this order)
 
