@@ -1,0 +1,13 @@
+Field,Description
+Specimen,Specimen code (fragment letter of Table 1 + sequential number)
+Field label,"Original field/digitising label (U = A, C = B, CB = C, I = D, E = E, M = F, FA = G, HB = H, JF = I)"
+Fragment,Forest fragment (A–I; Table 1)
+Bait (reference allocation),"Bait compound assigned to the specimen by a random draw with a fixed seed (2025) so that, within each fragment, the number of specimens per bait equals the balanced allocation of Table S1. The bait at which each male was actually captured was not recorded: this column is a reference allocation, not an observation, and it is not used in any analysis"
+Centroid size,Wing centroid size in image units (coordinate units of the digitised images at fixed magnification)
+Date of capture,Date on which the male was captured (yyyy-mm-dd)
+Season,cold-dry (April–September) or hot-wet (October–March)
+Year,Year of capture
+"Area (ha), Isolation (km), Elevation (m), Disturbance","Attributes of the fragment, as in Table 1 (L = low, M = medium, H = high disturbance)"
+x1 … y12 (Data S1c),"Raw coordinates of landmarks 1–12 (Fig. 3) in image units, as digitised"
+px1 … py12 (Data S1d),Procrustes-aligned coordinates of landmarks 1–12 (generalised Procrustes analysis; unit centroid size)
+Geographic distance (Data S1e),"Straight-line distance between fragment centroids (km), used in the Mantel tests"

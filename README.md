@@ -1,9 +1,9 @@
-# Wing centroid size of *Eulaema cingulata* in Atlantic Forest remnants: analysis scripts
+# Wing centroid size of *Eulaema cingulata* in Atlantic Forest remnants: data and analysis scripts
 
-Scripts that reproduce the analyses, supplementary tables and figures of the manuscript
+Data and scripts that reproduce the analyses, supplementary tables and figures of the manuscript
 **"Wing centroid size variation among *Eulaema cingulata* (Fabricius) populations from Atlantic Forest remnants of different sizes"**
 (submitted to the *Journal of Insect Conservation*). They are deposited here at the request of the reviewers; the manuscript
-cites this repository in its Data analysis, Data availability and Code availability sections.
+cites this repository for the data (folder `data/`) and the scripts (folder `scripts/`).
 
 ## Scripts (run in this order)
 
@@ -29,12 +29,27 @@ Rscript scripts/05_crosscheck_models_in_R.R .
 Each script accepts an optional project root as its first argument (default: the repository folder).
 Inputs are read from `data/raw/` and all results are written to `outputs/` (tables as CSV, `results.json`, figures in `outputs/figures/`).
 
-## Input data
+## Data (Supplementary Data S1a–e of the article)
 
-The source spreadsheets are not distributed in this repository. The individual-level data used in the analyses
-(field dictionary, individual records, raw and Procrustes-aligned landmark coordinates, and geographic distances
-between remnants) are published with the article as Supplementary Data S1a–e. The original spreadsheets and wing
-images are available from the corresponding author on reasonable request. Expected files in `data/raw/`:
+The folder `data/` holds the individual-level data analysed in the article, as CSV files (UTF-8, comma-separated) with the same values as the
+Word files Data S1a–e of the supplementary material:
+
+| File | Content | Article item |
+|---|---|---|
+| `data/DataS1a_field_dictionary.csv` | Description of every field of the data set | Data S1a |
+| `data/DataS1b_individual_male_records.csv` | One row per male (211): specimen code, field label, fragment (A–I), wing centroid size (image units), date of capture, season, year and fragment attributes (area, isolation, elevation, disturbance) | Data S1b |
+| `data/DataS1c_raw_wing_landmark_coordinates.csv` | Raw x–y coordinates (image units) of the 12 wing landmarks of each male, as digitised | Data S1c |
+| `data/DataS1d_procrustes_aligned_landmark_coordinates.csv` | Landmark coordinates after generalised Procrustes analysis (unit centroid size), input of the shape analyses | Data S1d |
+| `data/DataS1e_geographic_distances_between_fragments_km.csv` | Straight-line distances (km) between the nine forest fragments | Data S1e |
+
+Note: the column `Bait (reference allocation)` of `DataS1b` is **not an observed variable**. It is a random, balanced assignment of the five
+bait compounds within each fragment (fixed seed 2025) that reproduces Table S1; the bait of capture of each male was not recorded and this
+column is not used in any analysis.
+
+## Source spreadsheets (inputs of the scripts)
+
+The scripts start from the original field and digitising spreadsheets, which are not distributed here; they are available from the
+corresponding author on reasonable request, as are the raw wing images. Expected files in `data/raw/`:
 
 - `DADOS MORFOMETRIA (1).xlsx` and `DADOS MORFOMETRIA_TODOS_MOD.xlsx` (landmark coordinates)
 - `DADOS MORFOMETRIA_TODOS.xlsx` (centroid size)
