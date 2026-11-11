@@ -42,10 +42,6 @@ Word files Data S1a–e of the supplementary material:
 | `data/DataS1d_procrustes_aligned_landmark_coordinates.csv` | Landmark coordinates after generalised Procrustes analysis (unit centroid size), input of the shape analyses | Data S1d |
 | `data/DataS1e_geographic_distances_between_fragments_km.csv` | Straight-line distances (km) between the nine forest fragments | Data S1e |
 
-Note: the column `Bait (reference allocation)` of `DataS1b` is **not an observed variable**. It is a random, balanced assignment of the five
-bait compounds within each fragment (fixed seed 2025) that reproduces Table S1; the bait of capture of each male was not recorded and this
-column is not used in any analysis.
-
 ## Source spreadsheets (inputs of the scripts)
 
 The scripts start from the original field and digitising spreadsheets, which are not distributed here; they are available from the
